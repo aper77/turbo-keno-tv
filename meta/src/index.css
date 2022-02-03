@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header{
+  width: 100%;
+  background-color:#00355A;
+  height: 120px;
+  position: fixed;
+}
+
+.meta-logo{
+  background-image:  url('/src/logos/Group\ 10.png');
+  width: 440px;
+  height: 182px;
+  left: 45px;
+  position:absolute;
+	vertical-align: middle;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+}
+
+.about{
+  background-size: 100% 100%;
+  width: 100%;
+  height: 800px; 
+  background-image:  url('/src/logos/lens_flare.jpg');
+  display: block;
+}
+h1{
+  position: absolute;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.about-h1{
+  position: absolute;
+  width: 60%;
+  height: 132px;  
+  overflow: hidden;
+  margin-left: 94px;
+  margin-top: 205px;
+}
+
+.text{
+  position: absolute;
+  width: 60%;
+  height: 132px;  
+  overflow: hidden;
+  margin-left: 94px;
+  margin-top: 380px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  font-weight: 500;
+  margin-bottom: 1.6em;
+}
+
+.second-text{
+  position: absolute;
+  width: 60%;
+  height: 132px;  
+  overflow: hidden;
+  margin-left: 94px;
+  margin-top: 530px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  font-weight: 500;
+  margin-bottom: 1.6em;
+}
+
+/* .about-page-button{
+  position: absolute;
+  background-size: 100% 100%;
+  background-image: url('/src/logos/Rectangle\ 5.png');
+	bottom: 0;
+  background-color: tomato;
+} */
+
+.about-button{
+  background-color: transparent;
+  width: 298px;
+  height: 127px;
+}
+
+.button{
+  position:absolute;
+  width: 298px;
+  height: 127px;
+  background-size: 100% 100%;
+  background: url('/src/logos/Rectangle\ 5.png') no-repeat;
+  cursor:pointer;   
+  border: none;
+  bottom: 0;
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+.button:hover{
+  cursor: pointer;
+  bottom: 10px;
+  transition: 0.5s;
+}
+
+.intelligentBtn{
+  left: 4%;
+}
+
+.sensorsBtn{
+  left: 25%;
+}
+
+
