@@ -1,0 +1,85 @@
+@import './../../assets/styles/toRem';
+
+.history {
+  width: 100%;
+}
+
+.history__title {
+  font-size: rem(26px);
+  line-height: rem(26px);
+  font-weight: 700;
+  color: var(--color-title);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.history__inner {
+  margin-top: rem(8px);
+  width: 100%;
+  height: rem(186px);
+}
+
+.history__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+
+.history__item {
+  margin-bottom: 2px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.history__id {
+  margin-right: rem(24px);
+  font-size: rem(30px);
+  font-weight: 700;
+  color: var(--color-text2);
+}
+
+.historyDraw {
+  padding: rem(12px) rem(9px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  background-color: rgba(203, 185, 220, 0.051);
+}
+
+.historyDraw__list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.historyDraw__item {
+  margin-right: rem(7px);
+  width: calc(100% / 20 - rem(133px) / 20);
+  background-image: url('./../../assets/images/draw/ball.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(17px);
+  font-weight: 700;
+  color: var(--color-text);
+
+  &::after {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+}
+

@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.ellipsis {
+  overflow: hidden;
+  flex-grow: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+html {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

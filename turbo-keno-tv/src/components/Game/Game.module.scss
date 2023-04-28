@@ -1,0 +1,29 @@
+@import './../../assets/styles/toRem';
+
+.game {
+  padding: rem(16px) rem(76px) rem(16px) rem(68px);
+  width: 100%;
+  height: calc(100% - rem(90px));
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.game__bet {
+  width: 39.36%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.game__process {
+  //width: 52.4%;
+  width: 56.701%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,0 +1,109 @@
+@import './../../assets/styles/toRem';
+
+.header {
+  padding: rem(8px) 0;
+  width: 100%;
+  height: rem(90px);
+  font-size: rem(32px);
+  background-image: url('./../../assets/images/header/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.headerJackpot {
+  width: 33.3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerJackpot__name {
+  margin-right: rem(20px);
+  display: flex;
+  align-items: center;
+  font-size: rem(46px);
+  font-weight: 700;
+  color: var(--color-text3);
+  text-shadow: rem(2px) rem(2px) rem(3px) rgba(0, 0, 0, 0.3);
+}
+
+.headerJackpot__sum {
+  display: flex;
+  align-items: center;
+
+  span {
+    margin: 0 rem(12px);
+    display: inline-block;
+    font-size: rem(36px);
+    color: var(--color-count);
+  }
+}
+
+.headerJackpot__coin {
+  font-size: rem(46px);
+  font-weight: 700;
+  color: var(--color-active);
+}
+
+.headerJackpot__currency {
+   visibility: hidden;
+  margin-bottom: rem(16px);
+  font-size: rem(16px);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-count);
+}
+
+.headerWinner {
+  //visibility: hidden;
+  width: 38.55%;
+  height: 100%;
+  font-size: rem(28px);
+  font-weight: 700;
+  color: var(--color-text1);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //border-right: 2px solid var(--color-border);
+  //border-left: 2px solid var(--color-border);
+
+  span {
+    margin: 0 rem(12px);
+    display: inline-block;
+    font-size: rem(36px);
+    color: var(--color-count);
+  }
+}
+
+.headerLimits {
+  width: 33.25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerLimits__details {
+  width: fit-content;
+}
+
+.headerLimitsInfo {
+  font-size: rem(26px);
+  font-weight: 700;
+  color: var(--color-text1);
+
+  span {
+    display: inline-block;
+    color: var(--color-text2);
+  }
+}
+
+.horizontal_line {
+  width: 1px;
+  background-color: white;
+  height: 80%;
+}

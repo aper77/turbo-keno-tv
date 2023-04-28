@@ -1,0 +1,74 @@
+@import './../../assets/styles/toRem';
+
+.betTemp {
+  width: 100%;
+  height: rem(56px);
+  display: flex;
+  align-items: center;
+  background-color: var(--color-temp);
+  border-radius: rem(10px);
+}
+
+.betTemp__name {
+  width: rem(112px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(28px);
+  font-weight: 700;
+  color: var(--color-text);
+  text-transform: uppercase;
+  border-left: rem(16px) solid var(--color-cold);
+  border-radius: rem(10px);
+  background-image: linear-gradient( 90deg, rgb(60,44,74) 0%, rgb(45,36,53) 32%, rgb(70,56,82) 100%);
+  box-shadow: inset 0 2px 0 0 rgba(255, 255, 255, 0.15);
+
+  &.hot {
+    border-color: var(--color-hot);
+  }
+}
+
+
+.betTemp__numbers {
+  padding: 0 rem(16px) 0 rem(15px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.betTemp__list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.betTemp__item {
+  margin-right: rem(10px);
+  width: calc(100% / 6 - rem(50px) / 6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(23px);
+  font-weight: 700;
+  color: var(--color-text);
+  background-image: linear-gradient( 90deg, rgb(68,50,84) 0%, rgb(63,50,74) 32%, rgb(76,61,89) 100%);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+
+  &::after {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+

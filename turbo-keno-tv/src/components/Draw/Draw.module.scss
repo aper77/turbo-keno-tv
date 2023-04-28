@@ -1,0 +1,67 @@
+@import './../../assets/styles/toRem';
+
+.draw {
+  width: 100%;
+}
+
+.draw__header {
+  width: 100%;
+}
+
+.draw__next {
+  margin-bottom: rem(12px);
+  font-size: rem(36px);
+  line-height: rem(36px);
+  font-weight: 700;
+  color: var(--color-title);
+  text-align: center;
+}
+
+.draw__current {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.draw__currentName {
+  font-size: rem(28px);
+  line-height: rem(28px);
+  font-weight: 700;
+  color: var(--color-border);
+}
+
+.draw__currentID {
+  margin-right: rem(42px);
+  font-size: rem(28px);
+  line-height: rem(28px);
+  font-weight: 700;
+  color: var(--color-text5);
+}
+
+.draw__load {
+  width: 48.86%;
+  height: rem(14px);
+  border-radius: rem(7px);
+  overflow: hidden;
+}
+
+.draw__body {
+  margin: rem(11px) 0 rem(14px);
+  width: 100%;
+  height: rem(183px);
+}
+
+.draw__footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.draw__temp {
+  width: 46.67%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

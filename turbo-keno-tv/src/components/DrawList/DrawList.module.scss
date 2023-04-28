@@ -1,0 +1,35 @@
+@import './../../assets/styles/toRem';
+
+.draw__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.draw__item {
+  margin: 0 rem(19px) rem(16px) 0;
+  width: calc(100% / 10 - rem(171px) / 10);
+  font-size: rem(37px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+
+  &:nth-child(10n + 10) {
+    margin-right: 0;
+  }
+
+  &:nth-last-child(-n + 10) {
+    margin-bottom: 0;
+  }
+}

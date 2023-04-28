@@ -1,0 +1,17 @@
+@import './../../assets/styles/toRem';
+
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.loading {
+  transition-duration: 0.2s;
+  border-radius: rem(8px);
+  height: 99.9%;
+  background-image: -webkit-linear-gradient( 90deg, rgb(214,179,33) 0%, rgb(130,89,18) 22%, rgb(234,198,49) 59%, rgb(255,255,255) 100%);
+}

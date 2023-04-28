@@ -1,0 +1,82 @@
+@import './../../assets/styles/toRem';
+
+.coefficient {
+  //margin: rem(20px) 0 rem(16px);
+  width: 100%;
+}
+
+.coefficient__table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.coefficient__caption {
+  margin-bottom: rem(8px);
+  font-size: rem(26px);
+  line-height: rem(26px);
+  font-weight: 700;
+  color: var(--color-title);
+  text-transform: uppercase;
+}
+
+.coefficient__thead {
+  width: 100%;
+  height: rem(37px);
+
+  .coefficient__tr {
+    background-color: #2e2236;
+
+    .coefficient__th {
+      background-color: transparent;
+
+      &:first-child {
+        width: rem(47px);
+        height: rem(37px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #251d2b;
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+      }
+    }
+  }
+}
+
+.coefficient__tr {
+  width: 100%;
+  height: rem(28px);
+  background-color: #362b40;
+
+  &:nth-child(even) {
+    background-color: #2d2435;
+  }
+}
+
+.coefficient__tbody {
+  .coefficient__th {
+    width: rem(47px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+  }
+}
+
+.coefficient__th {
+  margin: 0;
+  padding: 0;
+  font-size: rem(17px);
+  font-weight: 700;
+  color: var(--color-text);
+  text-align: center;
+  background-color: #251d2b;
+}
+
+.coefficient__td {
+  font-size: rem(17px);
+  font-weight: 700;
+  color: var(--color-td);
+  width: 9.533%;
+  text-align: center;
+}

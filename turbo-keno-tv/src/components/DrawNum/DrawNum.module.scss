@@ -1,0 +1,46 @@
+@import './../../assets/styles/toRem';
+
+@keyframes show {
+  0% {
+    width: 0;
+    font-size: 0;
+  }
+
+  60% {
+    width: 115%;
+    font-size: 1.3em;
+  }
+
+  100% {
+    width: 100%;
+    font-size: 1em;
+  }
+}
+
+.drawNum {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./../../assets/images/draw/ball.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--color-text);
+
+  &::after {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+
+  &.show {
+    animation: show 0.4s ease-in;
+  }
+}
